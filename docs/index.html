@@ -1,0 +1,50 @@
+---
+layout: default
+title: Moment
+summary: Take a moment and catch up on the day's news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 2-minute episodes.
+---
+<p><strong>Moment News</strong> brings you today's news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 2-minute episodes.</p>
+
+
+{% assign latest_post = site.posts | first %}
+<article class="post">
+
+  <h1 class="u-full-width">{{ latest_post.title }}</h1>
+
+  <p class="post-meta"><time datetime="{{ latest_post.date | date_to_xmlschema }}" itemprop="datePublished">{{ latest_post.date | date: "%b %-d, %Y" }}</time> | Read by {{ latest_post.voices }}</p>
+
+  <div class="container center-content">
+    <div class="seven columns">
+      <audio controls>
+        <source src="{{ latest_post.file }}" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="four columns center-content">
+      <a href="{{ site.baseurl }}{{ latest_post.file }}" class="button u-full-height" download="{{ latest_post.title }}">Download Now</a>
+    </div>
+  </div>
+  <div>
+    {{ latest_post.content }}
+
+    <p><em>Keywords - {{ latest_post.keywords }}</em></p>
+  </div>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ latest_post.summary }}",
+  "datePublished": "{{ latest_post.date }}",
+  "author":
+  [
+    {
+      "@type":"Organization",
+      "name": "Moment News",
+      "url": "https://moment.co.za/"
+    }
+  ],
+  "url": "{{ latest_post.url }}"
+}
+</script>

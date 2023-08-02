@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="apple-itunes-app" content="app-id=1681108725">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="{{ " /css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /podcast.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#fc9552">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#fc9552">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta name="theme-color" content="#fc9552">
+
+  <!-- OpenGraph social media properties -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.summary }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/android-chrome-512x512.png">
+  <meta property="og:url" content="https://moment.co.za">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta property="og:site_name" content="Moment News">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@shauntrennery">
+
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="UOJPGCFT" defer></script>
+
+</head>

@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post">
+
+  <h1 class="u-full-width">{{ page.title }}</h1>
+
+  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> | Read by {{ page.voices }}</p>
+
+  <div class="container center-content">
+    <div class="seven columns">
+      <audio controls preload="auto">
+        <source src="{{ page.file }}" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="four columns center-content">
+      <a href="{{ site.baseurl }}{{ page.file }}" class="button u-full-height" download="{{ page.title }}">Download Now</a>
+    </div>
+  </div>
+  <div>
+    {{ content }}
+
+    <p><em>Keywords - {{ page.keywords }}</em></p>
+  </div>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ page.summary }}",
+  "datePublished": "{{ page.date }}",
+  "author":
+  [
+    {
+      "@type":"Organization",
+      "name": "Moment News",
+      "url": "https://moment.co.za/"
+    }
+  ],
+  "url": "{{ page.url }}"
+}
+</script>

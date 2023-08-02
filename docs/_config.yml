@@ -1,0 +1,32 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Moment
+description: "Take a moment and catch up on the day's news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 2-minute episodes."
+subtitle: "Take a moment and catch up on the day's news – a podcast powered by AI"
+lang: en
+author: Shaun Trennery
+copyright: "CC BY-NC-SA 4.0"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://moment.co.za" # the base hostname & protocol for your site
+twitter_username: shauntrennery
+github_username: shauntrennery
+
+#permalink: /:year/:title.html
+
+#Timezone
+timezone: Africa/Johannesburg
+
+#Setup for Pages
+include: ["_pages"]
+
+# Build settings
+markdown: kramdown
+
+#Exclude local build settings
+exclude: ["readme.md", "Gemfile.lock", "Gemfile"]
