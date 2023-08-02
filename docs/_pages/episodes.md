@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Episodes from Moment News"
+title: "Episodes from Just a Moment News"
 summary: Recent news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 2-minute episodes.
 permalink: /episodes
 ---
 
-<p><strong>Moment News</strong> brings you today's news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 2-minute episodes – listen while brushing your teeth!</p>
+<p><strong>Just a Moment News</strong> brings you today's news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 3-minute episodes</p>
 
 <div class="card-grid">
 <!--     -->
