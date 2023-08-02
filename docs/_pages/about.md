@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About Moment News"
+title: "About Just a Moment News"
 summary: "Details of the tech stack for the Moment News podcast."
 permalink: /about
 ---
@@ -13,4 +13,4 @@ permalink: /about
 - News source: [RSS App](https://rss.app/feeds/_0AAqTi9NqZ1F030k.xml)
 - English-language summaries: [OpenAI API](https://platform.openai.com)
 - Text-to-speech: [ElevenLabs API](https://beta.elevenlabs.io)
-- Programming: Good ol' [Python](https://www.python.org)
+- Programming: [Python](https://www.python.org)

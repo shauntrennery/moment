@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Episodes from Just a Moment News"
-summary: Recent news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 2-minute episodes.
+summary: Recent news, powered by AI. This computer-generated daily podcast covers the most important stories in easy-to-digest 3-minute episodes.
 permalink: /episodes
 ---
 
