@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Moment News - {today}"
+title: "Just a Moment News - {today}"
 date: {datetime}
-file: https://archive.org/download/momentnews/monentnews_{today}.mp3
+file: https://archive.org/download/momentnews/momentnews_{today}.mp3
 summary: "News for {today}"
 description: "Take a moment and catch up on {today_human}'s news."
 duration: "{duration}"
