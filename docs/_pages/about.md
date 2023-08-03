@@ -7,7 +7,7 @@ permalink: /about
 
 ### Contact
 
-- Shaun Trennery: (https://twitter.com/shauntrennery) @shauntrennery
+- Shaun Trennery: [@shauntrennery](https://twitter.com/shauntrennery)
 
 ### Technology used
 
