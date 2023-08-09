@@ -11,6 +11,7 @@ description: "Take a moment and catch up on the day's news, powered by AI. This 
 subtitle: "Take a moment and catch up on the day's news – a podcast powered by AI"
 lang: en
 author: Shaun Trennery
+email: shaun.trennery@gmail.com
 copyright: "CC BY-NC-SA 4.0"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://moment.co.za" # the base hostname & protocol for your site
