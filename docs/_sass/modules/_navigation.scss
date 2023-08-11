@@ -14,7 +14,7 @@ nav ul {
 
 nav li {
   flex-grow: 1;
-  min-width: 25%;
+  min-width: 20%;
   margin: 0px 0px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
@@ -31,13 +31,13 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   display: block;
-  padding: .3em 0px; 
+  padding: 0.3em 0px;
   border-bottom: 6px solid transparent;
 }
 
 nav a:hover {
   background: darken($secondary-color, 10%);
-  color: #fff; 
+  color: #fff;
   border-bottom: 6px solid $primary-color;
 }
 
@@ -45,7 +45,7 @@ nav a:hover {
   nav {
     font-size: 1em;
   }
-  
+
   nav a {
     padding: 0.8em 0px;
   }
