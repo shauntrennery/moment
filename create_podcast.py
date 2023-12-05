@@ -186,7 +186,7 @@ def upload_to_internet_archive(ia_session, file_path, identifier, metadata):
 def read_config_from_env():
     load_dotenv()
     config = {
-        'news_feed': "https://rss.app/feeds/1KgoD3402e6Lv4Ge.xml",  
+        'news_feed': "https://rss.app/feeds/YUdYhlFU8B4aQLnY.xml",  
         'openai_api_key': os.getenv("OPENAI_API_KEY"),
         'elevenlabs_api_key': os.getenv("ELEVENLABS_API_KEY"),
         'ia_access_key': os.getenv("IA_ACCESS_KEY"),
