@@ -41,7 +41,7 @@ def fetch_stories(news_feed_url, limit=10):
 
 
 def generate_chat_content(stories, today):
-    prompt = "Here are some news headlines and summaries for today (" + today + "). First, rewrite the news stories in a discussion way, as though someone is talking about them one by one on the 'Just a Moment News' podcast in a non-judgemental way and with no follow-on discussion. Second, DO NOT append the term [Image] or [Source] or [Image Source]. Third, add an opening greeting (mentioning your name 'Erika', 'Just a Moment News' and the date) and a closing greeting (mentioning your name 'Erika' and 'Just a Moment News')."
+    prompt = "Here are some news headlines and summaries for today (" + today + "). First, rewrite the news stories in a discussion way, as though someone is talking about them one by one on the 'Just a Moment News' podcast in a non-judgemental way and with no follow-on discussion. Do not make each story too short. Second, DO NOT append the term [Image] or [Source] or [Image Source]. Third, add an opening greeting (mentioning your name 'Erika', 'Just a Moment News' and the date) and a closing greeting (mentioning your name 'Erika' and 'Just a Moment News')."
     
     try:
         chat_output = openai.ChatCompletion.create(
